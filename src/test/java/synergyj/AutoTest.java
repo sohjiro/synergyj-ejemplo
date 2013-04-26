@@ -20,7 +20,6 @@ public class AutoTest {
 
   @Test
   public void alEncenderElCarroElStereoDebeEstarApagado() {
-    Auto auto = new Auto();
     assertFalse(auto.estaEncendido());
     auto.encender();
     assertFalse(auto.estaElStereoEncendido());
@@ -28,7 +27,6 @@ public class AutoTest {
 
   @Test
   public void elStereoNoDebePrenderConElCarroApagado() {
-    Auto auto = new Auto();
     assertFalse(auto.estaEncendido());
 
     auto.encenderElStereo(null);
@@ -38,7 +36,6 @@ public class AutoTest {
 
   @Test
   public void elStereoDebePrenderConElCarroEncendido() {
-    Auto auto = new Auto();
     assertFalse(auto.estaEncendido());
 
     auto.encender();
