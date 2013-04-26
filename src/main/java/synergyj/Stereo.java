@@ -13,6 +13,7 @@ public class Stereo {
   }
 
   public boolean estaReproduciendo() {
+    // agregar unhappy path... en el cual se arroje una excepcion
     return estaReproduciendo;
   }
 }

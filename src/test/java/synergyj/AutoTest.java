@@ -41,7 +41,6 @@ public class AutoTest {
     auto.encender();
     assertTrue(auto.estaEncendido());
 
-
     when(stereo.estaReproduciendo()).thenReturn(true);
     auto.encenderElStereo(stereo);
     
